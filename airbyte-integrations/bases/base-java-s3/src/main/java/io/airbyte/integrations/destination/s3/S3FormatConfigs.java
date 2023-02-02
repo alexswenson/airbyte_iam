@@ -35,6 +35,9 @@ public class S3FormatConfigs {
       case PARQUET -> {
         return new S3ParquetFormatConfig(formatConfig);
       }
+      case JSON -> {
+        return new S3JsonFormatConfig(formatConfig)
+      }
       default -> {
         throw new RuntimeException("Unexpected output format: " + Jsons.serialize(config));
       }

@@ -9,7 +9,8 @@ public enum S3Format {
   AVRO("avro"),
   CSV("csv"),
   JSONL("jsonl"),
-  PARQUET("parquet");
+  PARQUET("parquet"),
+  JSON("json");
 
   private final String fileExtension;
 
